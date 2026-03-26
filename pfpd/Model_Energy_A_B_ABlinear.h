@@ -1,0 +1,74 @@
+/***************************************************************
+*
+* Class defining a Doi-Uneyama free energy model
+* 
+* DRT -- Wed, 18 Aug 2015
+*
+****************************************************************/
+
+#ifndef _MODEL_ENERGY_A_B_ABLINEAR_H
+#define _MODEL_ENERGY_A_B_ABLINEAR_H
+
+#include "global.h"
+#include "SmartFieldVec.h"
+#include "SmartFieldMat.h"
+#include "SmartFieldOpMat.h"
+#include "Model_Energy_Base.h"
+#include "Operators_Base.h"
+
+class Model_Energy_A_B_ABlinear : public Model_Energy_Base
+{
+
+  public:
+    Model_Energy_A_B_ABlinear( Operators_Base & OpObj, int ncomp, int nicomp );
+    ~Model_Energy_A_B_ABlinear();
+
+    void set_params();
+
+    // calculate chemical potentials
+    // (All inputs/outputs are in Fourier Space!)
+    void calc_mu(const SmartFieldVec & phi, SmartFieldVec & mu); //chemical potential
+    void calc_mu_lin_exp(const SmartFieldVec & phi, SmartFieldVec & mu_lin); //explicit linear chem. pot.
+    void calc_mu_lin_imp(const SmartFieldVec & phi, SmartFieldOpMat & F); // implicit linear chem pot.
+    void calc_del_mu(const SmartFieldVec & phi, SmartFieldMat & del_mu);
+
+    // scale for the chemical potential
+    // (e.g. used in Model H)
+    inline RealType mu_scale() {return _Nr;};
+
+    // supporting member functions
+    void calc_Hessian( const SmartFieldVec & phi, SmartFieldMat & Hess );
+    Vec2dFieldType calc_Hmax( const SmartFieldVec & phi );
+
+  private:
+
+    Vec1dReal get_sf(const RealType &f);
+
+    // model parameters
+    RealType _Nr, _KappaM ; // Molecular weight
+    RealType _CReg, _CRegN, _Delta; // Regularization parameters
+    RealType _f, _alphaD;
+
+    Vec1dReal _N; // degree of polymerization
+    Vec1dReal _alpha; // relative degree of polymerization to Nr
+    Vec2dReal _Chi; // Flory interaction parameters
+    Vec2dReal _ChiN; // Flory interaction parameters * Nr
+    Vec2dReal _ChiN_ijM; // = ChiN_ij - ChiN_iM - ChiN_jM (used repeatedly)
+    Vec1dReal _Kappa; // Gradient coefficients
+    Vec2dReal _C; // Coulomb coefficients
+    Vec1dReal _sf;
+
+
+    // These variables help so we only have to do the calculation once
+    // This helps considerably with speed
+    bool _PrecalcMuExp; // have we precalculated variables for explicit linear part?
+    bool _PrecalcMuImp; // have we precalculated variables for implicit linear part?
+    bool _RegFlag; // are we using regularization?
+    Vec2dFieldType _Hmax; // Maximum Hessian
+    SmartFieldVec _KappaGrad2Phi;
+    SmartField _Coul_tau;
+    UInt _Dim;
+
+};
+
+#endif //_MODEL_ENERGY_A_B_ABLINEAR_H
