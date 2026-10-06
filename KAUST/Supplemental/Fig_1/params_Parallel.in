@@ -1,0 +1,7 @@
+{
+    "MPInnodes": 1,
+    "OMPnthreads": 1,
+    "CUDAdeviceID": -1,
+    "CUDAnthreads": 128,
+    "maxnumelements": 100000000
+}

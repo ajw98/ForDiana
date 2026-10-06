@@ -1,0 +1,14 @@
+{
+    "BinaryIn_flag": 1,
+    "BinaryOut_flag": 1,
+    "IC_flag": 3,
+    "phi1_in": 0.087,
+    "phi2_in": 0.005,
+    "phi1_out": 0.005,
+    "phi2_out": 0.99,
+    "sig": 0.001,
+    "w": 0.9,
+    "f": 0.02,
+    "my_seed": 4242645755,
+    "VelIC_flag": 0
+}

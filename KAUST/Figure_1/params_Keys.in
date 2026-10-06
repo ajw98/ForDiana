@@ -1,0 +1,10 @@
+{
+    "Ncomp": 3,
+    "NIcomp": 2,
+    "GridFlag": 0,
+    "EnergyModelFlag": 4,
+    "MobilityModelFlag": 2,
+    "ViscModelFlag": 2,
+    "TimeIntFlag": 1,
+    "ReactionsModelFlag": 0
+}

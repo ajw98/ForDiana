@@ -1,0 +1,30 @@
+{
+    "TimeIntFlag": 1,
+    "t_max": 100000.0,
+    "dt0": 1e-06,
+    "max_dt": 0.5,
+    "min_dt": 1e-09,
+    "dt_disp": 500.0,
+    "phi_err_tol_max": 1e-06,
+    "v_err_tol": 1e-06,
+    "var_visc_flag": 1,
+    "output_interval_flag": 0,
+    "Nt_max": 1000000000,
+    "N_step_disp": 1,
+    "phi_iter_max": 100,
+    "var_dt_flag": 1,
+    "CapPhi0Flag": 0,
+    "phi0_max": 0.396,
+    "BodyForce_flag": 0,
+    "bf_phiT": 0.5447,
+    "bf_w": 0.008,
+    "bf_scale": [
+        0,
+        1.0,
+        0
+    ],
+    "bf_comp": 0,
+    "enablefluctuations": 1,
+    "reductionFactor": 500000.0,
+    "advection_flag": 0
+}

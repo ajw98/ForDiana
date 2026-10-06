@@ -1,0 +1,33 @@
+
+
+
+----Evaluating Binary Systems----
+Case 1: Finite Miscibility between Polymer and Non-solvent
+
+
+----Solving For an Initial Critical Point----
+Critical Point 0.1128 0.5984 0.2888
+	Accuracy: inf
+
+
+----Solving For the Spinodal Curve----
+Polymer/Non-solvent Spinodal Points   0.04093   0.4838
+	Number of Spinodal Points that did not converge: 0 
+
+
+
+----Searching Spinodal Curve For Potential Critical Points----
+Critical Point: 0.1128 0.5984 0.2888                   
+	Accuracy: inf
+
+
+----Solving For the Binodal Curve----
+[0.65159704 0.00095897] for N= 25.0
+Polymer/Non-solvent Binodal Points 9800  0.6516   0.000959
+	Accuracy: 17.16
+
+
+----Plotting the Ternary Phase Diagram----
+
+
+

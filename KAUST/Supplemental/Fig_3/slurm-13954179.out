@@ -1,0 +1,36 @@
+plotting:  nfields_00023
+1
+ax
+Graph width: 0.949 inches
+Graph height: 0.949 inches
+[1.725 1.725]
+plotting:  nfields_00050
+1
+ax
+Graph width: 1.085 inches
+Graph height: 1.085 inches
+[1.4   1.725]
+plotting:  nvel_00023
+2
+ax
+Graph width: 0.949 inches
+Graph height: 0.949 inches
+[1.725 1.725]
+plotting:  nvel_00050
+2
+ax
+Graph width: 1.085 inches
+Graph height: 1.085 inches
+[1.4   1.725]
+/var/spool/slurmd/job13954179/slurm_script: line 26: ./plt_fields.py: No such file or directory
+/var/spool/slurmd/job13954179/slurm_script: line 27: ./plt_a.py: No such file or directory
+/var/spool/slurmd/job13954179/slurm_script: line 28: ./plt_vel.py: No such file or directory
+/var/spool/slurmd/job13954179/slurm_script: line 29: ./plt_b.py: No such file or directory
+Traceback (most recent call last):
+  File "/home/ajw98/linuxstuff/new_code/ForDiana/Kaust_Fig_Data/Supplemental/Fig_3/./Vel_mix.py", line 8, in <module>
+    Image.open("12/plt/nfields_00007.png"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/python/3.12.2/gcc-11.4.1/lib/python3.12/site-packages/PIL/Image.py", line 3247, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '12/plt/nfields_00007.png'

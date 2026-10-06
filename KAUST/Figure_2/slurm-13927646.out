@@ -1,0 +1,51 @@
+plotting:  nfields_00000
+1
+ax
+ax
+Graph width: 0.047 inches
+Graph height: 0.949 inches
+[2.    1.725]
+plotting:  nvel_00000
+2
+ax
+ax
+Graph width: 0.047 inches
+Graph height: 0.949 inches
+[2.    1.725]
+plotting:  nfields_00078
+1
+ax
+Graph width: 1.147 inches
+Graph height: 1.147 inches
+[1.55  1.725]
+plotting:  nfields_00090
+1
+ax
+Graph width: 1.147 inches
+Graph height: 1.147 inches
+[1.55  1.725]
+plotting:  nfields_00100
+1
+ax
+Graph width: 1.147 inches
+Graph height: 1.147 inches
+[1.55  1.725]
+plotting:  nvel_00078
+2
+ax
+Graph width: 1.147 inches
+Graph height: 1.147 inches
+[1.55  1.725]
+plotting:  nvel_00090
+2
+ax
+Graph width: 1.147 inches
+Graph height: 1.147 inches
+[1.55  1.725]
+plotting:  nvel_00100
+2
+ax
+Graph width: 1.147 inches
+Graph height: 1.147 inches
+[1.55  1.725]
+1870 3900
