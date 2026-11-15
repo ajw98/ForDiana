@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-# This code is used to find the Chi interaction parameters for making phase diagrams for the solvents Polar clean \
-        #and 2-Pyrolidone as well as the polymer Polysulfone and the non-solvent water.
+# This code is used to find the Chi interaction parameters for making phase diagrams
 
 
 import numpy as np
